@@ -11,7 +11,8 @@ body {
   margin: 0;
   padding: 0;
 
-  width: 100vw;
+  width: auto;
+  min-width: 100%;
   min-height: 100vh;
   height: 100%;
 
@@ -31,6 +32,9 @@ body {
   font-size: 5rem;
   padding: 3rem 0;
   font-family: 'Press Start 2P', cursive;
+
+  display: flex;
+  text-align: center;
 }
 
 .multicolor {
@@ -40,15 +44,25 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 #content {
   width: 30%;
   height: auto;
 
   display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 
+  row-gap: 1rem;
+}
 
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
   row-gap: 1rem;
 }
 
@@ -138,4 +152,39 @@ img {
 
 #github-icon:hover {
   height: 3.3rem;
+}
+
+/* @media (max-width: 1350px) {
+  #content {
+    width: 30%;
+    max-width: 80%;
+    height: auto;
+  
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  
+
+  }
+} */
+
+@media (max-width: 900px) {
+  #header {
+    font-size: 4rem;
+    padding: 3rem 0;
+  }
+  
+  #content {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 900px) {
+  
+  
+  #content {
+    width: 60%;
+  }
 }

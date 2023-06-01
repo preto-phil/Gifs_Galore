@@ -10,6 +10,7 @@ const searchBtn = document.querySelector('#search-btn');
 searchBtn.addEventListener('click', () => {
   const rawSearchValue = document.querySelector('#search').value;
   searchInputValue = encodeURIComponent(rawSearchValue.trim());
+  fetchRandomGif();
 });
 
 function fetchRandomGif() {
