@@ -63,7 +63,7 @@ body {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  row-gap: 1rem;
+  row-gap: 2rem;
 }
 
 #search {
@@ -120,6 +120,7 @@ img {
   border: 2px solid rgb(183, 76, 204);
   box-shadow: 2px 2px 12px violet;
 }
+
 
 #footer {
 
