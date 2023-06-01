@@ -12,7 +12,8 @@ body {
   padding: 0;
 
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
 
   font-family: monospace;
 
@@ -106,9 +107,7 @@ img {
   box-shadow: 2px 2px 12px violet;
 }
 
-#main-footer {
-  position: absolute;
-  bottom: 0;
+#footer {
 
   padding-bottom: 1rem;
   display: flex;
