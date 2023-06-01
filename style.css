@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  font-family: monospace;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+
+  background-image: url(./Images/860586-nebula-wallpaper.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#header {
+  font-size: 5rem;
+  padding: 3rem 0;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.multicolor {
+  background: linear-gradient(to left, rgb(230, 147, 230), rgb(184, 126, 226), rgb(128, 223, 128), rgb(144, 144, 230), rgb(216, 216, 50), rgba(255, 166, 0, 0.658), rgb(230, 116, 116));
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#content {
+  width: 30%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  row-gap: 1rem;
+}
+
+#search {
+  width: 100%;
+
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  border: 3px solid rgb(134, 12, 190);
+  background-color: rgb(238, 130, 238, 0.6);
+  border-radius: 6px;
+  color: black;
+  font-weight: 600;
+}
+
+#search::placeholder {
+  color: black;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 2px 2px 12px rgb(134, 12, 190);
+}
+
+#search-btn,
+#new-gif-btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: 2px solid rgb(183, 76, 204);
+  background-color: rgb(14, 13, 13, 0.9);
+  color: rgb(183, 76, 204);
+
+  font-size: 1.5rem;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+#search-btn:hover,
+#new-gif-btn:hover {
+  box-shadow: 2px 2px 12px violet;
+}
+
+
+#search-btn:active,
+#new-gif-btn:active {
+  background-color: rgb(14, 13, 13, 0.6);
+  color: rgb(183, 76, 204);
+  box-shadow: 2px 2px 12px violet;
+}
+
+
+img {
+  border: 2px solid rgb(183, 76, 204);
+  box-shadow: 2px 2px 12px violet;
+}
+
+#main-footer {
+  position: absolute;
+  bottom: 0;
+
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+#footer-text {  
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: whitesmoke;
+  text-shadow: 2px 2px 12px violet;
+}
+
+#github-icon {
+  font-size: 1.5rem;
+  
+  height: 3rem;
+  width: 100%;
+  
+  cursor: pointer;
+
+  background: url('./gh-icon.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border: none;
+}
+
+#github-icon:hover {
+  height: 3.3rem;
+}
